@@ -38,3 +38,9 @@ MySQLコンテナ
 $ docker-compose exec mysql mysql -usail -ppassword
 ```
 
+# Dockerコンテナ日本語入力対応
+
+Laravelコンテナ
+```
+$ apt-get update && apt-get install -y locales && locale-gen ja_JP.UTF-8 && echo "export LANG=ja_JP.UTF-8" >> ~/.bashrc
+```
