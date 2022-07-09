@@ -47,6 +47,7 @@ services:
             test: ["CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}"]
             retries: 3
             timeout: 5s
+        command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     redis:
         image: 'redis:alpine'
         ports:
