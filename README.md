@@ -47,5 +47,5 @@ $ apt-get update && apt-get install -y locales && locale-gen ja_JP.UTF-8 && echo
 
 # ストレージ対応
 ```
-$ artisan storage:link
+$ php artisan storage:link
 ```
